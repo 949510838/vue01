@@ -596,7 +596,7 @@
               pageSize: this_.pagesize,
               currentPage: cur
             };
-            //通过qs序列化提交的json参数=========================
+            //通过qs序列化提交的json参数
             var sendDataQs = this_.$qs.stringify(sendData);
             this_.$http.post(url, sendDataQs).then(response => { //提交成功的操作			
               var jsarr = response.data;
